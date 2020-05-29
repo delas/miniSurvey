@@ -2,17 +2,48 @@
 
 $questions = [
 	"1" => [
-		"title" => "Hello, how are you?",
-		"img" => "img/test.png",
-		"answers" => ["first", "second", "third"],
+		"title" => "Which of the following is a valid execution?",
+		"img" => "img/Trial_Andrea_Server_01",
+		"answers" => ["A,B,E,C", "B,E,C,", "A,B,E,D"],
+		"nextStep" => "NASA-TLX"
+	],
+
+	"NASA-TLX" => [
+		"title" => "NASA-TLX Questionnaire"
 		"nextStep" => "2"
-	],
+	]
+
 	"2" => [
-		"title" => "Is this the second question?",
-		"img" => "img/test2.png",
-		"answers" => ["yes", "no"],
-		"nextStep" => "end"
+		"title" => "Mental Demand - How mentally demanding was the task??",
+		"answers" => ["0%-25%", "25%-50%","50%-75%","75%-100%"],
+		"nextStep" => "3"
 	],
+	"3" => [
+		"title" => "Physical Demand - How physically demanding was the task??",
+		"answers" => ["0%-25%", "25%-50%","50%-75%","75%-100%"],
+		"nextStep" => "4"
+	],
+	"4" => [
+		"title" => "Temporal Demand - How hurried or rushed was the pace of the task?",
+		"answers" => ["0%-25%", "25%-50%","50%-75%","75%-100%"],
+		"nextStep" => "5"
+	],
+	"5" => [
+		"title" => "Performance - How successful were you in accomplishing what you were asked to do?",
+		"answers" => ["0%-25%", "25%-50%","50%-75%","75%-100%"],
+		"nextStep" => "6"
+	],
+	"6" => [
+		"title" => "Effort - How hard did you have to work to accomplish your level of performance?",
+		"answers" => ["0%-25%", "25%-50%","50%-75%","75%-100%"],
+		"nextStep" => "7"
+	],
+	"7" => [
+		"title" => "Frustration - How insecure, discouraged, irritated, stressed, and annoyed were you?",
+		"answers" => ["0%-25%", "25%-50%","50%-75%","75%-100%"],
+		"nextStep" => "end"
+	],			
+
 	"end" => [
 		"title" => "Thanks for participating in the survey!"
 	]
