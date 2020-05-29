@@ -2,9 +2,9 @@
 
 $questions = [
 	"1" => [
-		"title" => "Hello, how are you?",
-		"img" => "img/test.png",
-		"answers" => ["first", "second", "third"],
+		"title" => "Which of the following are valid executions?",
+		"img" => "img/Trial_Andrea_Server_01",
+		"answers" => ["A,B,E,C", "B,E,C,", "A,B,E,D"],
 		"nextStep" => "2"
 	],
 	"2" => [
